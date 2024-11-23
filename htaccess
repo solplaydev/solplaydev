@@ -1,0 +1,24 @@
+ErrorDocument 403 /page19321232.html
+ErrorDocument 404 /page19321232.html
+
+DirectoryIndex page19300420.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://solplay\.app/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteCond %{HTTP_HOST} ^www\.solplay.app [NC]
+RewriteRule ^(.*)$ https://solplay\.app/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^zsdfxghj$ page24469055.html [NC]
+RewriteRule ^zsdfxghj/$ page24469055.html [NC]
+
+RewriteRule ^dfrgthyjukjhgfd$ page28814724.html [NC]
+RewriteRule ^dfrgthyjukjhgfd/$ page28814724.html [NC]
+
+
